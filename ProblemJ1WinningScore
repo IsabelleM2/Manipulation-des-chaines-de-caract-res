@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+/*
+* Author : Isabelle
+*Date : 6-Jan-2021 
+*/
+public class ProblemJ1WinningScore
+	{
+
+		public static void main(String[] args)
+			{
+				Scanner sc=new Scanner(System.in);
+				int Aa=sc.nextInt();
+			    int Ab=sc.nextInt();
+				int Ac=sc.nextInt();
+				
+				int Ba=sc.nextInt();
+				int Bb=sc.nextInt();
+				int Bc=sc.nextInt();
+				
+				int sommeA= (Aa*3)+(Ab*2)+Ac;
+				int sommeB= (Ba*3)+(Bb*2)+Bc;
+				if(sommeA>sommeB)
+				System.out.println("A");
+				else
+				if(sommeB>sommeA)
+				System.out.println("B");
+				else
+				System.out.println("N");
+
+			}
+
+	}
