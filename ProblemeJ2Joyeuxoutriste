@@ -1,0 +1,46 @@
+/*
+* Author : Isabelle
+*Date : 6-Jan-2021 
+*/
+public class ProblemeJ2Joyeuxoutriste
+	{
+
+		public static void main(String[] args)
+			{
+
+				String machaine="Joyeux :-) ou :-(:-)Triste";
+				char [] a =machaine.toCharArray();
+
+				int cptj=0;
+				int cptt=0;
+				for(int i=0; i<a.length;i++)
+				{
+					if ((a[i]==':')&&(a[i+1]=='-')&&(a[i+2]==')'))
+						cptj++;	
+				}
+				
+				for (int i=0;i<a.length;i++)
+				{
+					if ((a[i]==':')&&(a[i+1]=='-')&&(a[i+2]=='('))
+						cptt++;
+
+				}
+				
+				if(cptt>cptj) {
+					System.out.println("Triste");
+				}
+				if(cptj>cptt) {
+					System.out.println("Joyeuses");
+				}
+				if((cptj==cptt)&&(cptt>0)&&(cptj>0))
+				{
+					System.out.println("Incertaine");
+				}
+				if((cptj==0)&&(cptt==0))
+				{
+					System.out.println("Aucune");
+
+			}
+
+			}
+	}
